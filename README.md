@@ -2,11 +2,11 @@
 
 This repository contains all my personal config files. These include dotfiles, software settings and docs.
 
-This may be not very nice as I'm not very experienced user, but feedback is appreciated.
+It may be not very nice as I'm not very experienced user, but feedback is appreciated.
 
-Use `restore.sh` script to automatically restore all symlinks.
+`restore.sh` script automatically restores all symlinks.
 It will remove all original config files and replace with files in repo.
-It is assumed original config file are default or don't exist.
+It is assumed original config files are default or don't exist.
 
 - `~/.zshrc` → `./zshrc`
 - `~/.p10k.zsh` → `./p10k.zsh`
