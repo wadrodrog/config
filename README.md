@@ -1,6 +1,6 @@
 # Config Files
 
-This repository contains all my personal config files. These include dotfiles, software settings and instructions.
+This repository contains all my personal config files. These include dotfiles, software settings and docs.
 
 This may be not very nice as I'm not very experienced user, but feedback is appreciated.
 
@@ -11,3 +11,4 @@ It is assumed original config file are default or don't exist.
 - `~/.zshrc` → `./zshrc`
 - `~/.p10k.zsh` → `./p10k.zsh`
 - `~/.config/neofetch/config.conf` → `./neofetch.cfg`
+- `~/.mozilla/firefox/*-release/chrome/userChrome.css` → `./firefox.css`

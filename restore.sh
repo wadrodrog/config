@@ -28,9 +28,14 @@ DIR_NEOFETCH="$HOME/.config/neofetch"
 SYM_NEOFETCH="config.conf"
 TRG_NEOFETCH="neofetch.conf"
 
+DIR_FIREFOX="$HOME/.mozilla/firefox/*-release/chrome"
+SYM_FIREFOX="userChrome.css"
+TRG_FIREFOX="firefox.css"
+
 
 # Replace files
 
 replace $DIR_ZSH $TRG_ZSH $SYM_ZSH
 replace $DIR_P10K $TRG_P10K $SYM_P10K
 replace $DIR_NEOFETCH $TRG_NEOFETCH $SYM_NEOFETCH
+replace $DIR_FIREFOX $TRG_FIREFOX $SYM_FIREFOX
