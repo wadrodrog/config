@@ -10,9 +10,9 @@
 6. `cp ~/config/fish/fish_plugins ~/.config/fish && fisher update`
 
 ## [fzf](https://github.com/PatrickF1/fzf.fish) plugin
-Search Directory: `Ctrl`+`Alt`+`f`
-Git Log: `Ctrl`+`Alt`+`l`
-Git Status: `Ctrl`+`Alt`+`s`
-History: `Ctrl`+`r`
-Processes: `Ctrl`+`Alt`+`p`
-Variables: `Ctrl`+`v`
+- Search Directory: `Ctrl`+`Alt`+`f`
+- Git Log: `Ctrl`+`Alt`+`l`
+- Git Status: `Ctrl`+`Alt`+`s`
+- History: `Ctrl`+`r`
+- Processes: `Ctrl`+`Alt`+`p`
+- Variables: `Ctrl`+`v`
