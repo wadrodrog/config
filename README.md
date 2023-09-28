@@ -8,7 +8,7 @@ It may be not very nice as I'm not very experienced user, but feedback is apprec
 It will remove all original config files and replace with files in repo.
 It is assumed original config files are default or don't exist.
 
-- `~/.zshrc` → `./zshrc`
-- `~/.p10k.zsh` → `./p10k.zsh`
+- `~/.config/fish/config.fish` → `./fish/config.fish`
+- `~/.config/fish/fish_plugins` → `./fish/fish_plugins`
 - `~/.config/neofetch/config.conf` → `./neofetch.cfg`
 - `~/.mozilla/firefox/*-release/chrome/userChrome.css` → `./firefox.css`
