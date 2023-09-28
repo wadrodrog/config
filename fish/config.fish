@@ -14,5 +14,5 @@ alias upgrb="flatpak upgrade && yay && echo Reboot in 10 seconds... && sleep 10 
 #alias inf="informant --file ~/.cache/informant"
 
 # Python
-alias venv=". venv/bin/activate"
+alias venv=". venv/bin/activate.fish"
 alias pybuild="python -m pip install -e ."
