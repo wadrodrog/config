@@ -6,7 +6,7 @@ local n = vim.fn.expand('%:r')
 
 local cmds = {
     python = "python " .. f,
-    cpp = "g++ " .. f .. " -o " .. n .. " && ./" .. n,
+    cpp = "g++ " .. f .. " -o " .. n .. " && " .. n,
     rust = "cargo run",
 }
 

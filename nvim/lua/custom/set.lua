@@ -45,8 +45,7 @@ if vim.g.neovide then
     vim.o.title = true
 
     vim.keymap.set('v', '<C-c>', '"+y')
-    vim.keymap.set('n', '<C-v>', '"+P')
-    vim.keymap.set('v', '<C-v>', '"+P')
+    vim.keymap.set({'n', 'v'}, '<C-v>', '"+p')
+    vim.keymap.set('i', '<C-v>', '<ESC>"+pli')
     vim.keymap.set('c', '<C-v>', '<C-R>+')
-    vim.keymap.set('i', '<C-v>', '<ESC>l"+Pli')
 end

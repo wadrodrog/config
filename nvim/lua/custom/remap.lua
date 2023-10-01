@@ -1,34 +1,35 @@
 -- Standard actions --
 vim.g.mapleader = " "
 vim.keymap.set("n", ";", ":")
-vim.keymap.set("n", "<C-s>", "<cmd>:w<CR>")
-vim.keymap.set("n", "<C-z>", "u")
-vim.keymap.set("n", "<C-y>", "<C-r>")
-vim.keymap.set("n", "<Esc>", "<cmd>:noh<CR>")
+vim.keymap.set("n", "<C-s>", "<cmd>:w<CR>", {desc = 'Save'})
+vim.keymap.set("n", "<C-z>", "u", {desc = 'Undo'})
+vim.keymap.set("n", "<C-y>", "<C-r>", {desc = 'Redo'})
+vim.keymap.set("n", "<C-a>", "<esc>ggVG<CR>", {desc = 'Select All'})
+vim.keymap.set("n", "<Esc>", "<cmd>:noh<CR>", {desc = 'Remove Highlight'})
 
 -- Switch windows
-vim.keymap.set("n", "<C-h>", "<C-w>h")
-vim.keymap.set("n", "<C-j>", "<C-w>j")
-vim.keymap.set("n", "<C-k>", "<C-w>k")
-vim.keymap.set("n", "<C-l>", "<C-w>l")
+vim.keymap.set("n", "<C-h>", "<C-w>h", {desc = 'Switch to left window'})
+vim.keymap.set("n", "<C-j>", "<C-w>j", {desc = 'Switch to lower window'})
+vim.keymap.set("n", "<C-k>", "<C-w>k", {desc = 'Switch to upper window'})
+vim.keymap.set("n", "<C-l>", "<C-w>l", {desc = 'Switch to right window'})
 
 
 
 -- Plugins --
 
 -- Files (mvim-tree plugin). Remaps in after/plugin/nvim_tree.lua, F1 for help
-vim.keymap.set("n", "<C-n>", "<cmd>:NvimTreeToggle<CR>")
+vim.keymap.set("n", "<C-n>", "<cmd>:NvimTreeToggle<CR>", {desc = 'Files (nvim-tree)'})
 
 -- Buffers (bufferline plugin)
-vim.keymap.set("n", "<C-w>", "<cmd>:bdelete!<CR>")
-vim.keymap.set("n", "<Tab>", "<cmd>:bnext<CR>")
-vim.keymap.set("n", "<S-Tab>", "<cmd>:bprev<CR>")
+vim.keymap.set("n", "<C-w>", "<cmd>:bdelete!<CR>", {desc = 'Close tab'})
+vim.keymap.set("n", "<Tab>", "<cmd>:bnext<CR>", {desc = 'Switch tabs'})
+vim.keymap.set("n", "<S-Tab>", "<cmd>:bprev<CR>", {desc = 'Reverse switch tabs'})
 
 -- Undo Tree
-vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle)
+vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle, {desc = 'Undo Tree'})
 
 -- Markdown Preview
-vim.keymap.set("n", "<leader>md", "<cmd>:MarkdownPreview<CR>")
+vim.keymap.set("n", "<leader>md", "<cmd>:MarkdownPreview<CR>", {desc = 'Markdown Preview'})
 
 
 
@@ -39,10 +40,10 @@ vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 -- Replace text
-vim.keymap.set("n", "<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>")
+vim.keymap.set("n", "<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>", {desc = 'Replace text'})
 
 -- Make file executable
-vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
+vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { desc = 'Make file executable', silent = true })
 
 
 -- Other --
