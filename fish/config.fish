@@ -9,6 +9,7 @@ fish_add_path -p $HOME/scripts
 alias session "echo $XDG_SESSION_TYPE"
 
 # System updates
+alias fupg="flatpak upgrade"
 alias upg="flatpak upgrade && yay && shutdown"
 alias upgrb="flatpak upgrade && yay && echo Reboot in 10 seconds... && sleep 10 && reboot"
 #alias inf="informant --file ~/.cache/informant"
