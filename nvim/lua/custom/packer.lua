@@ -10,7 +10,7 @@ return require('packer').startup(function(use)
     -- File Tree
     use {
         'nvim-tree/nvim-tree.lua',
-        requires = { 'nvim-tree/nvim-web-devicons' },  -- Optional
+        requires = { 'nvim-tree/nvim-web-devicons' }, -- optional
     }
 
     -- Fuzzy Finder
@@ -33,9 +33,20 @@ return require('packer').startup(function(use)
     use 'mbbill/undotree'
 
     -- Git Plugins
+    use {
+        'NeogitOrg/neogit',
+        requires = {
+            "nvim-lua/plenary.nvim",         -- required
+            "nvim-telescope/telescope.nvim", -- optional
+            "sindrets/diffview.nvim",        -- optional
+            "ibhagwan/fzf-lua",              -- optional
+        },
+        config = function() require('neogit').setup {} end
+    }
+    use('sindrets/diffview.nvim')
+
     use('tpope/vim-fugitive')
     use('lewis6991/gitsigns.nvim')
-    use('sindrets/diffview.nvim')
 
     -- Language Server Protocol + Autocompletion
     use {
@@ -67,12 +78,7 @@ return require('packer').startup(function(use)
     }
 
     -- Comment
-    use {
-        'numToStr/Comment.nvim',
-        config = function()
-            require('Comment').setup()
-        end
-    }
+    use 'numToStr/Comment.nvim'
 
     -- Which Key
     use {
