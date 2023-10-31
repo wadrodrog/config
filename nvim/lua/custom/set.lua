@@ -37,6 +37,10 @@ vim.opt.wrap = false
 -- Smart indent
 vim.opt.smartindent = true
 
+-- Fold column
+vim.o.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
+vim.o.foldcolumn = '1'
+
 -- Neovide
 if vim.g.neovide then
     -- Appearance

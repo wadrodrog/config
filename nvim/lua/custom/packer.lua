@@ -114,4 +114,10 @@ return require('packer').startup(function(use)
     -- Nvterm
     use 'NvChad/nvterm'
 
+    -- nvim-ufo (code fold)
+    use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}
+
+    -- Indent lines
+    use {'lukas-reineke/indent-blankline.nvim', config = require("ibl").setup()}
+
 end)
