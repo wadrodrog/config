@@ -1,3 +1,1 @@
-nvim/plugin/
-# nvim/spell/*
-# https://ftp.nluug.nl/pub/vim/runtime/spell/lang.utf-8.spl + *.sug
+nvim/lazy-lock.json
