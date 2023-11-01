@@ -10,5 +10,4 @@ It is assumed original config files are default or don't exist.
 
 - `~/.config/fish/config.fish` → `./fish/config.fish`
 - `~/.config/fish/fish_plugins` → `./fish/fish_plugins`
-- `~/.config/neofetch/config.conf` → `./neofetch.cfg`
 - `~/.mozilla/firefox/*-release/chrome/userChrome.css` → `./firefox.css`

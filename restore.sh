@@ -23,10 +23,6 @@ TRG_FISH="fish/config.fish"
 SYM_FISH_PLUGINS="fish_plugins"
 TRG_FISH_PLUGINS="fish/fish_plugins"
 
-DIR_NEOFETCH="$HOME/.config/neofetch"
-SYM_NEOFETCH="config.conf"
-TRG_NEOFETCH="neofetch.conf"
-
 DIR_FIREFOX="$HOME/.mozilla/firefox/*-release/chrome"
 SYM_FIREFOX="userChrome.css"
 TRG_FIREFOX="firefox.css"
@@ -36,5 +32,4 @@ TRG_FIREFOX="firefox.css"
 
 replace $DIR_FISH $TRG_FISH $SYM_FISH
 replace $DIR_FISH $TRG_FISH_PLUGINS $SYM_FISH_PLUGINS
-replace $DIR_NEOFETCH $TRG_NEOFETCH $SYM_NEOFETCH
 replace $DIR_FIREFOX $TRG_FIREFOX $SYM_FIREFOX
