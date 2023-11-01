@@ -1,6 +1,3 @@
---  Color scheme
-vim.cmd.colorscheme("carbonfox")
-
 -- Disable netrw because of nvim-tree
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1

@@ -1,20 +1,19 @@
 local builtin = require('telescope.builtin')
 
 -- Project
-vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
-vim.keymap.set('n', '<leader>lg', builtin.live_grep, {})
-vim.keymap.set('n', '<leader>qf', builtin.quickfix, {})
+vim.keymap.set('n', '<leader>ff', builtin.find_files, {desc = 'Find Files'})
+vim.keymap.set('n', '<leader>fl', builtin.live_grep, {desc = 'Live Grep'})
+vim.keymap.set('n', '<leader>fq', builtin.quickfix, {desc = 'Quick Fix'})
 
 -- File
-vim.keymap.set('n', '<leader>sm', builtin.lsp_document_symbols, {})
-vim.keymap.set('n', '<leader>dgn', builtin.diagnostics, {})
+vim.keymap.set('n', '<leader>fs', builtin.lsp_document_symbols, {desc = 'Symbols'})
+vim.keymap.set('n', '<leader>fd', builtin.diagnostics, {desc = 'Diagnostics'})
 
 -- Vim
-vim.keymap.set('n', '<leader>vc', builtin.commands, {})
-vim.keymap.set('n', '<leader>vo', builtin.vim_options, {})
+vim.keymap.set('n', '<leader>fv', builtin.commands, {desc = 'Vim Commands'})
+vim.keymap.set('n', '<leader>fo', builtin.vim_options, {desc = 'Vim Options'})
 
 -- Git
-vim.keymap.set('n', '<leader>gf', builtin.git_files, {})
-vim.keymap.set('n', '<leader>gc', builtin.git_commits, {})
-vim.keymap.set('n', '<leader>gs', builtin.git_status, {})
-vim.keymap.set('n', '<leader>gt', builtin.git_stash, {})
+vim.keymap.set('n', '<leader>fg', builtin.git_files, {desc = 'Git Files'})
+vim.keymap.set('n', '<leader>fc', builtin.git_commits, {desc = 'Git Commits'})
+vim.keymap.set('n', '<leader>ft', builtin.git_status, {desc = 'Git Status'})

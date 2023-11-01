@@ -1,4 +1,4 @@
-require("custom.remap")
-require("custom.set")
-require("custom.run")
-require("custom.packer")
+require('custom.remap')
+require('custom.lazy')
+require('custom.set')
+require('custom.run')

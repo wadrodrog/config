@@ -9,12 +9,12 @@ local function remap(bufnr)
     api.config.mappings.default_on_attach(bufnr)
 
     -- Overrides
-    vim.keymap.set('n', '<2-LeftMouse>', api.node.open.edit,              opts('Open Preview'))
+    vim.keymap.set('n', '<2-LeftMouse>', api.node.open.edit,                 opts('Open Preview'))
     vim.keymap.set('n', '<C-c>',         api.fs.copy.node,                   opts('Copy'))
     vim.keymap.set('n', '<C-CR>',        api.tree.change_root_to_node,       opts('CD'))
     vim.keymap.set('n', '<C-v>',         api.fs.paste,                       opts('Paste'))
     vim.keymap.set('n', '<C-x>',         api.fs.cut,                         opts('Cut'))
-    vim.keymap.set('n', '<CR>',          api.node.open.edit,              opts('Open Preview'))
+    vim.keymap.set('n', '<CR>',          api.node.open.edit,                 opts('Open'))
     vim.keymap.set('n', '<Del>',         api.fs.trash,                       opts('Trash'))
     vim.keymap.set('n', '<F1>',          api.tree.toggle_help,               opts('Help'))
     vim.keymap.set('n', '<F2>',          api.fs.rename_basename,             opts('Rename: Basename'))
@@ -57,7 +57,7 @@ local function remap(bufnr)
 end
 
 
-require("nvim-tree").setup {
+require('nvim-tree').setup({
     disable_netrw = true,
     hijack_cursor = true,
     update_focused_file = {
@@ -80,11 +80,11 @@ require("nvim-tree").setup {
     renderer = {
         full_name = true,
         highlight_git = true,
-        highlight_modified = "all",
+        highlight_modified = 'all',
         indent_width = 2,
     },
     live_filter = {
-        prefix = "> ",
+        prefix = '> ',
     },
     ui = {
         confirm = {
@@ -92,4 +92,4 @@ require("nvim-tree").setup {
             trash = true,
         },
     },
-}
+})
