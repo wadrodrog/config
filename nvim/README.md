@@ -2,6 +2,8 @@
 
 This is a super shitty neovim config, please be kind.
 
+![This neovim config in Neovide](/nvim/neovim.png)
+
 ## Installation
 
 1. Install `neovim ripgrep` packages
