@@ -2,7 +2,7 @@
 
 This is a super shitty neovim config, please be kind.
 
-![This neovim config in Neovide](/nvim/neovim.png)
+![This neovim config in Neovide](neovim.png)
 
 ## Installation
 
