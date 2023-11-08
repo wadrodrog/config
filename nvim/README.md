@@ -18,3 +18,8 @@ This is a super shitty neovim config, please be kind.
 - https://ftp.nluug.nl/pub/vim/runtime/spell/lang.utf-8.spl
 - https://ftp.nluug.nl/pub/vim/runtime/spell/lang.utf-8.sug
 2. Put downloaded files in `nvim/spell/`
+
+## Credits
+
+- [0 to LSP : Neovim RC From Scratch](https://youtu.be/w7i4amO_zaE)
+by [ThePrimeagen](https://www.youtube.com/@ThePrimeagen)

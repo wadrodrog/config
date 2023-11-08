@@ -39,7 +39,7 @@ vim.keymap.set('n', '<Tab>', '<cmd>:bnext<CR>', {desc = 'Switch tabs'})
 vim.keymap.set('n', '<S-Tab>', '<cmd>:bprev<CR>', {desc = 'Reverse switch tabs'})
 
 -- Git --
-vim.keymap.set('n', '<leader>git', '<cmd>Neogit kind=auto<CR>', {desc = 'Git (neogit)'})
+vim.keymap.set('n', '<leader>gi', '<cmd>Neogit kind=auto<CR>', {desc = 'Git (neogit)'})
 vim.keymap.set('n', '<leader>gd', '<cmd>DiffviewOpen<CR>', {desc = 'Git Diff'})
 
 -- Use plugins --
