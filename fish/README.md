@@ -12,12 +12,12 @@
 
 ## fzf plugin
 
-- Search Directory: `Ctrl`+`Alt`+`f`
-- Git Log: `Ctrl`+`Alt`+`l`
-- Git Status: `Ctrl`+`Alt`+`s`
-- History: `Ctrl`+`r`
+- Search Directory: `Ctrl`+`f`
+- Git Log: `Ctrl`+`l`
+- Git Status: `Ctrl`+`s`
+- History: `Ctrl`+`h`
 - Processes: `Ctrl`+`Alt`+`p`
-- Variables: `Ctrl`+`v`
+- Variables: `Ctrl`+`Alt`+`v`
 
 ## Credits
 

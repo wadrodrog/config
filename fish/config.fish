@@ -3,7 +3,12 @@ if status is-interactive
     uname -r | cowsay
 end
 
+# Path
 fish_add_path -p $HOME/scripts
+
+# fzf plugin
+fzf_configure_bindings \
+--directory=\cf --git_log=\cl --git_status=\cs --history=\ch --variables=\e\cv
 
 # System information
 alias session "echo $XDG_SESSION_TYPE"
