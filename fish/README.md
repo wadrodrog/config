@@ -1,14 +1,20 @@
 # Fish Config
 
+A nice clean shell.
+
+![Fish prompt with this config](fish.png)
+
 ## Installation
 
-1. Packages: `fish fisher fzf fd bat`
-2. Nerd Fonts: https://github.com/IlanCosman/tide#fonts
-3. Default shell: `chsh -s /usr/bin/fish` (logout needed)
-3. Set colors: `fish_config`
-4. Disable greeting: `set -U fish_greeting`
-5. `ln -sf ~/config/fish/config.fish ~/.config/fish/config.fish`
-6. `cp ~/config/fish/fish_plugins ~/.config/fish && fisher update`
+1. Packages: `fish fzf fd bat`
+2. Install [fisher](https://github.com/jorgebucaran/fisher#installation).
+Note: install from fish, not bash.
+3. Nerd Fonts: https://github.com/IlanCosman/tide#fonts
+4. Default shell: `chsh -s /usr/bin/fish` (logout needed)
+5. Set colors: `fish_config`
+6. Disable greeting: `set -U fish_greeting`
+7. `ln -sf ~/config/fish/config.fish ~/.config/fish/config.fish`
+8. `cp ./fish/fish_plugins ~/.config/fish && fisher update`
 
 ## fzf plugin
 
